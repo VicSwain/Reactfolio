@@ -16,28 +16,28 @@ function Navigation() {
                 </li>
                 <li>
                     <Link
-                    to='/About'
+                    to='/about'
                     className={currentPage === '/About' ? 'nav-link active' : 'nav-link'}
                     >
                       About
                     </Link>
                 </li>
                 <li>
-                    <Link to='/Contact'
+                    <Link to='/contact'
                     className={currentPage === '/Contact' ? 'nav-link active' : 'nav-link'}
                     >
                       Contact
                     </Link>
                 </li>
                 <li>
-                    <Link to='/Portfolio'
+                    <Link to='/portfolio'
                     className={currentPage === '/Portfolio' ? 'nav-link active' : 'nav-link'}
                     >
                       Portfolio
                     </Link>
                 </li>
                 <li>
-                    <Link to='/Resume'
+                    <Link to='/resume'
                     className={currentPage === '/Resume' ? 'nav-link active' : 'nav-link'}
                     >
                       Resume
