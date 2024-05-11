@@ -16,7 +16,7 @@ import Resume from './pages/Resume';
 // define accessible routes
 const router = createBrowserRouter([
   {
-    path: '/',
+    path: '',
     element: <App />,
     errorElement: <Error />,
     children: [
@@ -25,19 +25,19 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: '/About',
+        path: '/about',
         element: <About />,
       },
       {
-        path: '/Contact',
+        path: '/contact',
         element: <Contact />,
       },
       {
-        path: '/Porfolio',
+        path: '/portfolio',
         element: <Portfolio />,
       },
       {
-        path: '/Resume',
+        path: '/resume',
         element: <Resume />,
       },
     ],
