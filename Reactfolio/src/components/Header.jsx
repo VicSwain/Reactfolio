@@ -51,9 +51,9 @@ function Navigation() {
 
 function Header() {
     return (
-        <header style={{ backgroundImage: `url(${backgroundImage})`, backgroundSize: 'cover' }}>
+        <header style={{ backgroundImage: `url(${backgroundImage})`, backgroundSize: 'cover'}}>
 
-            <h1 className='jumbotron text-center'>The Work of Victor Hugo Swain</h1>
+            <h2 className='text-center'>The Work of Victor Hugo Swain</h2>
             <Navigation />
         </header>
     );
