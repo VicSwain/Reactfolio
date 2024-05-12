@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
+        // need to get the icons displaying in line instead of stacked 
+
     <footer className="text-center">
       <div className="container">
         <ul className="social-links list-unstyled d-flex justify-content-center mb-4">

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import backgroundImage from '../assets/B&GImage1.jpg'
 
 function Navigation() {
     const currentPage = useLocation().pathname;
@@ -50,7 +51,8 @@ function Navigation() {
 
 function Header() {
     return (
-        <header>
+        <header style={{ backgroundImage: `url(${backgroundImage})`, backgroundSize: 'cover' }}>
+
             <h1 className='jumbotron text-center'>The Work of Victor Hugo Swain</h1>
             <Navigation />
         </header>
