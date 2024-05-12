@@ -6,6 +6,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css'
 // import fontawesome
 import '@fortawesome/fontawesome-free/css/all.css'
+import './App.css'
 import App from './App';
 // page imports
 import Error from './pages/Error';
