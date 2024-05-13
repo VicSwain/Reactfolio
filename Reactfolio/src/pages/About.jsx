@@ -1,7 +1,7 @@
 export default function About() {
     return (
-      <div>
-        <h1 className="text-center">Code Makeup of Vic Swain</h1>
+      <div className="container d-flex justify-content-center align-items-center text-center">
+        <h1>Code Makeup of Vic Swain</h1>
         <p>
         Hey there! 👋 I'm Vic Swain, a passionate learner and aspiring full-stack developer based in the vibrant city of Denver, Colorado.
 
