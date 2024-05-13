@@ -1,7 +1,7 @@
 export default function Home() {
     return (
-      <div>
-        <h1 className="text-center">Home Page</h1>
+      <div className="container d-flex justify-content-center align-items-center text-center">
+        <h1>Home Page</h1>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque
           velit, lobortis ut magna varius, blandit rhoncus sem. Morbi lacinia nisi

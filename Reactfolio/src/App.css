@@ -1,3 +1,9 @@
 body {
   color: #4CDA29
 }
+
+.content-box {
+  max-width: 600px;
+  min-height: 600px;
+  border: 0px solid black;
+}

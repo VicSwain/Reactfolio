@@ -5,9 +5,9 @@ const Footer = () => {
   return (
         // need to get the icons displaying in line instead of stacked 
 
-    <footer className="text-center">
-      <div className="container">
-        <ul className="social-links list-unstyled d-flex justify-content-center mb-4">
+    <footer className="text-center d-flex flex-row">
+      
+        <ul className="social-links list-unstyled mb-4">
           <li className="mx-2">
             <a href="https://www.facebook.com/victor.swain.54">
               <i className="fab fa-facebook-f"></i>
@@ -25,7 +25,7 @@ const Footer = () => {
           </li>
         </ul>
         <p>&copy; 2024 Portfolio made with React.</p>
-      </div>
+      
     </footer>
   );
 };
