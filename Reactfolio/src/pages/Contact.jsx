@@ -4,7 +4,7 @@ function ContactForm() {
   const [userName, setUserName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
-  const [errorMessage, setErrorMessage] = useState({});
+  const [errorMessage, setErrorMessage] = useState('');
 
   const handleInputChange = (e) => {
     // get the value and the name of the input that caused state change
@@ -14,18 +14,20 @@ function ContactForm() {
     if (name === 'email') {
       setEmail(value);
       if (!value.trim()) {
+        console.log(value);
         setErrorMessage('Email is required');
       } else if (!validateEmail(value)) {
         setErrorMessage('Please enter a valid email');
+      } else if (value.trim().lenght !== 0 ? '' : 'Email is required') {
       } else {
         setErrorMessage('');
       }
     } else if (name === 'userName') {
       setUserName(value);
-      setErrorMessage(value.trim() ? '' : 'Name is required');
+      setErrorMessage(value.trim().length !== 0 ? '' : 'Name is required');
     } else if (name === 'message') {
       setMessage(value);
-      setErrorMessage(value.trim() ? '' : 'Message is required');
+      setErrorMessage(value.trim().length !== 0 ? '' : 'Message is required');
     }
   };
   
@@ -34,8 +36,8 @@ function ContactForm() {
     e.preventDefault();
 
     // validate username
-    if(!userName.trim()) {
-      setErrorMessage('Name is required')
+    if(userName.trim()) {
+      setErrorMessage('')
       return;
     }
     // validate message
@@ -67,8 +69,10 @@ function ContactForm() {
                 type="text"
                 className="form-control"
                 placeholder="Name"
+                onBlur={handleInputChange}
               />
             </div>
+            <p>{errorMessage}</p>
             <div className="form-group">
               <input
                 value={email}
@@ -77,6 +81,7 @@ function ContactForm() {
                 type="email"
                 className="form-control"
                 placeholder="Email"
+                onBlur={handleInputChange}
               />
             </div>
             <div className="form-group">
@@ -87,10 +92,11 @@ function ContactForm() {
                 type="text"
                 className="form-control"
                 placeholder="message"
+                onBlur={handleInputChange}
               />
             </div>
             <div className="text-center form-group">
-              <button type="submit" className="btn btn-primary" style={{ backgroundColor: '#4CDA29', color: 'black' }}>
+              <button type="submit" className="btn" style={{ backgroundColor: '#4CDA29', color: 'black' }}>
                 Submit
               </button>
             </div>

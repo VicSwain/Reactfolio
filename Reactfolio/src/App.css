@@ -7,3 +7,11 @@ body {
   min-height: 600px;
   border: 0px solid black;
 }
+
+a {
+  color: black;
+}
+
+li {
+  color: #4CDA29;
+}
