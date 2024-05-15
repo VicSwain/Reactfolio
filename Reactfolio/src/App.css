@@ -1,17 +1,48 @@
 body {
-  color: #4CDA29
+  color: #4CDA29;
+  margin: auto;
+  
 }
 
 .content-box {
-  max-width: 600px;
-  min-height: 600px;
+  max-width: 400px;
+  max-height: 600px;
   border: 0px solid black;
+  
 }
 
 a {
-  color: black;
+  color: #4CDA29;
+  
 }
 
 li {
   color: #4CDA29;
+}
+
+img {
+  background-color: #4CDA29;
+  padding: 0;
+  /* height: 15%; */
+}
+
+.project-links {
+  color: #F535AA;
+  margin: 5px;
+}
+
+ul {
+  margin: 4px;
+}
+
+.footer-links {
+  margin: 3px;
+}
+
+.wrapper {
+  max-height: 75%;
+}
+
+.project-container {
+  color: #F535AA;
 }
