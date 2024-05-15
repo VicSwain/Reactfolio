@@ -1,11 +1,11 @@
 import React from "react";
 import Project from "../components/Project";
-import img1 from "../assets/EliteHunter1.png";
-import img2 from "../assets/Gastronome1.png";
-import img3 from "../assets/TechBlog6.png";
-import img4 from "../assets/WorkDayPlanner.gif";
-import img5 from '../assets/WeatherDashboard1.png'
-import img6 from '../assets/Password-Generator.jpeg'
+import img1 from '../../public/images/EliteHunter1.png'
+import img2 from '../../public/images/Gastronome1.png';
+import img3 from "../../public/images/TechBlog6.png";
+import img4 from "../../public/images/WorkDayPlanner.gif";
+import img5 from '../../public/images/WeatherDashboard1.png'
+import img6 from '../../public/images/Password-Generator.jpeg'
 function Portfolio() {
   return (
    

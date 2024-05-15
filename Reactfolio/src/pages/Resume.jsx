@@ -2,8 +2,8 @@ import React from "react";
 
 function Resume() {
   return (
-  <div className="container d-flex justify-content-center align-items-center text-center">
-    <button type="submit" className="btn btn-primary" style={{ backgroundColor: '#4CDA29', color: 'black' }}>Click here to download my resume</button>
+  <div className="container resume-btn mt-auto text-center">
+    <a className="btn btn-primary" href='../../public/downloadable/Victor-Swain Resume.pdf' download='Resume.pdf' style={{ backgroundColor: '#4CDA29', color: 'black' }}>Click here to download my resume</a>
     </div>
   )
 }
