@@ -8,7 +8,7 @@ function App() {
   return (
     <>
       <Header />
-      <main className="mx-3" style={{ backgroundImage: `url(${backgroundImage})`, backgroundSize: 'cover', height: '100vh'  }}>
+      <main className="container-fluid" style={{ backgroundImage: `url(${backgroundImage})`, backgroundSize: 'cover', height: '100vh'  }}>
         <Outlet />
       </main>
 
