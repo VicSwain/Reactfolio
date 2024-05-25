@@ -7,7 +7,7 @@ const Footer = () => {
     
     <footer className="text-center fixed-bottom" style={{ backgroundImage: `url(${backgroundImage})`}}>
       
-        <ul className="social-links list-unstyled">
+        <ul className="social-links footer-links list-unstyled">
           {/* <li className="mx-2"> */}
             <a href="https://www.facebook.com/victor.swain.54">
               <i className="fab fa-facebook-f footer-links"></i>
